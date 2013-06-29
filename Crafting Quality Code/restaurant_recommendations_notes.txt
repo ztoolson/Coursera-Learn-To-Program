@@ -1,0 +1,36 @@
+    '''
+    The Problem:
+
+    Write a function that has three parameters
+        -a restaurant file that is open for reading
+        -the price range(one of $, $$, $$$, or $$$$)
+        -list of cuisines
+    It returns a list of restaurants (in that price range, serving at least one
+    of those cuisines) and their ratings sorted from highest to lowest.
+    '''
+
+##    PLANNING THE PROGRAM
+##    Keep track of restaurant rating using a dictionary
+##        - key = resaurant anem
+##        - value = percent recommended
+    # dict{str: int}
+    name_to_rating = {'Georgie Porgie': 87,
+    'Queen St. Cafe': 82,
+    'Mexican Grill': 85,
+    'Deep Fried Everything': 52}
+
+##    Make list of the restaurents based on $
+    # dict of {str: list of str}
+    price_to_names = {'$': ['Queen St. Cafe', 'Dumplings R Us', 'Deep Fried Everything'],
+    '$$': ['Mexican Grill'],
+    '$$$': ['Georgie Porgie'],
+    '$$$$': []}
+
+##    List of each type of food
+    # dict{str: list of str]}
+    cuisine_to_names = {'Canadian': ['Georgie Porgie'],
+    'Pub Food': ['Georgie Porgie', 'Deep Fried Everything'],
+    'Malaysian': ['Queen St. Cafe'],
+    'Thai': ['Queen St. Cafe'],
+    'Chinese': ['Dumplings R Us'],
+    'Mexican': ['Mexican Grill'] }
